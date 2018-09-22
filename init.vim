@@ -1,0 +1,1 @@
+/home/aleix/.config/nvim/init.vim
