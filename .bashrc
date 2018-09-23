@@ -15,3 +15,4 @@ EDITOR=/usr/bin/nano
 alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
 
 alias cat='bat'
+alias ping='prettyping --nolegend'
