@@ -85,9 +85,12 @@ export LANG=de_DE.UTF-8
 export IDF_PATH=~/esp/esp-idf
 
 # Els meus alias
-alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
+alias vim='nvim'
 alias cat='bat'
 alias ping='prettyping --nolegend'
+alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
+alias get_esp8266='export PATH='$PATH:$HOME/Software/sloeber/arduinoPlugin/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
