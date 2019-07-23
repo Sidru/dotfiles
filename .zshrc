@@ -2,13 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/aleix/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE="nerdfont-complete"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#POWERLEVEL9K_MODE="nerdfont-complete"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 
 #POWERLEVEL9K_DISABLE_PROMPT=true
 #POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -81,16 +83,7 @@ unsetopt correct_all
 export LC_CTYPE=de_DE.UTF-8
 export LANG=de_DE.UTF-8
 
-
 export IDF_PATH=~/esp/esp-idf
-
-# Els meus alias
-alias vim='nvim'
-alias cat='bat'
-alias ping='prettyping --nolegend'
-alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
-alias get_esp8266='export PATH='$PATH:$HOME/Software/sloeber/arduinoPlugin/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin
-
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -116,5 +109,12 @@ alias get_esp8266='export PATH='$PATH:$HOME/Software/sloeber/arduinoPlugin/packa
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Els meus alias
+alias vim='nvim'
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
+alias get_esp8266='export PATH='$PATH:$HOME/Software/sloeber/arduinoPlugin/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin
+
+prompt_context () { }
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
