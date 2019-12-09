@@ -11,9 +11,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'mileszs/ack.vim'
-" ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax checking and semantic errors) in NeoVim 0.2.0+ and Vim 8 while you edit your text files, and acts as a Vim Language Server Protocol client.
-Plug 'dense-analysis/ale'
-						
+Plug 'dense-analysis/ale' " ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax checking and semantic errors) in NeoVim 0.2.0+ and Vim 8 while you edit your text files, and acts as a Vim Language Server Protocol client.
+Plug 'qpkorr/vim-bufkill' " Plugin to delete the buffer and keep the window intact
+Plug 'vobornik/vim-mql4' " Syntax fuer MQL4
+Plug 'justinmk/vim-syntax-extra' 
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
@@ -21,6 +22,13 @@ Plug 'dense-analysis/ale'
 " Initialize plugin system
 call plug#end()
 
+" The Silver Searcher bzw. Ag/Ack
 if executable('ag')
 		let g:ackprg = 'ag --vimgrep'
 endif
+
+" ALE
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 0

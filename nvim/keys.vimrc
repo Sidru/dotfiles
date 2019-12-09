@@ -1,6 +1,10 @@
 " Use jk for exit the insert mode 
 :imap jk <ESC>
 
+" Toggle the searching highlight
+let hlstate=0
+nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+
 " Use Ctrl+n to Toggle NerdTree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -21,3 +25,5 @@ noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
+" Toggle de ALE (Asynchronous Lint Engine) 
+nnoremap <Leader>a :ALEToggle<CR>
