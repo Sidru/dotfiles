@@ -15,6 +15,9 @@ Plug 'dense-analysis/ale' " ALE (Asynchronous Lint Engine) is a plugin providing
 Plug 'qpkorr/vim-bufkill' " Plugin to delete the buffer and keep the window intact
 Plug 'vobornik/vim-mql4' " Syntax fuer MQL4
 Plug 'justinmk/vim-syntax-extra' 
+Plug 'ludovicchabant/vim-gutentags' 
+Plug 'majutsushi/tagbar'
+
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
@@ -32,3 +35,8 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 0
+
+" GutenTags
+" Generate tag files for other types
+"let g:gutentags_project_root = ['Makefile’, '.git']
+"let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
