@@ -120,6 +120,7 @@ alias cat='bat'
 alias ping='prettyping --nolegend'
 alias get_esp32='export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"'
 alias get_esp8266='export PATH='$PATH:$HOME/Software/sloeber/arduinoPlugin/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin
+alias get_jlink='export PATH='$PATH:$HOME/Software/JLink_Linux_V662a_x86_64
 
 prompt_context () { }
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

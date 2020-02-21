@@ -6,6 +6,9 @@ nnoremap <F2> :let &cc = &cc == '' ? '100' : ''<CR>
 " Toggle the searching highlight
 let hlstate=0
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+" Quick run via <F5>
+nnoremap <F5> :call <SID>compile_and_run()<CR>
+nnoremap <F6> :IndentLinesToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 
 " Use Ctrl+n to Toggle NerdTree
@@ -16,6 +19,7 @@ nnoremap <C-p> :FZF<CR>
 
 " Use \+a to search with The Silver Searcher bzw. AG/ACK
 nnoremap <Leader>a :Ack!<Space>
+nnoremap <Leader>r :!pio run<CR>
 
 " Jump to the tag
 noremap <S-h> <C-T>
@@ -36,7 +40,6 @@ nnoremap <Right> :vertical resize -2<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
 
-
 " Copy and Past to/from Nvim/System clipboard
 " For X11-based systems (ie. Linux and most other UNIX-like systems) there are two clipboards which are independent of each other:
 " PRIMARY - This is copy-on-select, and can be pasted with the middle mouse button.
@@ -52,7 +55,7 @@ noremap <Leader>P "+p
 " Toggle de ALE (Asynchronous Lint Engine) 
 nnoremap <Leader>a :ALEToggle<CR>
 
-
+" Search with THe Silver Searcher
 nnoremap \ :Ack!<SPACE>
 
 " bind K to grep word under cursor
@@ -69,3 +72,6 @@ function! Csc()
   copen
 endfunction
 command! Csc call Csc()
+
+" Execute the file with python
+nnoremap <Leader>x :!python %:p<CR>
