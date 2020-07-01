@@ -19,7 +19,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'Yggdroot/indentLine'
-
+Plug 'vobornik/vim-mql4'
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'

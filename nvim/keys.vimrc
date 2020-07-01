@@ -20,7 +20,8 @@ nnoremap <C-p> :FZF<CR>
 " Use \+a to search with The Silver Searcher bzw. AG/ACK
 nnoremap <Leader>a :Ack!<Space>
 nnoremap <Leader>r :!pio run<CR>
-
+nnoremap <Leader>u :!pio run --target upload<CR>
+nnoremap <Leader>m :!wine "/home/aleix/.wine/drive_c/Program Files (x86)/XM UK MT4/metaeditor.exe" /compile:"%:p"<CR>
 " Jump to the tag
 noremap <S-h> <C-T>
 noremap <S-l> <C-]>
