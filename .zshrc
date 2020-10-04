@@ -124,3 +124,10 @@ alias get_jlink='export PATH='$PATH:$HOME/Software/JLink_Linux_V662a_x86_64
 
 prompt_context () { }
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pywal
+#setsid wal -i ~/Bilder/Backgrounds/binaryWorld.jpg
+#setsid wal -r
+
+#neofetch
+neofetch --pixterm ~/Bilder/Backgrounds/RickJoker.jpg
